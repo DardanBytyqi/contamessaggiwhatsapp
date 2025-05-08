@@ -1,0 +1,152 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+
+}
+
+.contenitore {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #007BFF;
+  text-align: center;
+}
+
+.istruzioni {
+  background: #e9f3ff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.istruzioni h2 {
+  font-size: 1.2rem;
+  color: #007BFF;
+  margin-top: 0;
+}
+
+.istruzioni ol {
+  padding-left: 1.3rem;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.istruzioni li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+#area-caricamento {
+  border: 2px dashed #007BFF;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #fefefe;
+  margin-bottom: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#area-caricamento:hover {
+  background-color: #e8f0ff;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+#area-caricamento.evidenziato {
+  background-color: #d0e8ff;
+  border-color: #0056b3;
+}
+
+#file-chat {
+  display: none;
+}
+
+#testo-area {
+  font-weight: 500;
+  color: #555;
+
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#risultati {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#risultati h2 {
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.scheda {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  font-size: 1rem;
+  color: #333;
+  background-color: var(--colore-scheda, #f0f0f0);
+  transition: transform 0.2s ease;
+  border: black solid 1px;
+}
+
+.scheda:hover {
+  transform: scale(1.03);
+}
+
+.schede {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.nascosto {
+  display: none;
+}
+
+.firma {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+  margin-top: 1rem;
+}

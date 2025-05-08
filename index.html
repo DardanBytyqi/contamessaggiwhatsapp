@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CONTA MESSAGGI WHATSAPP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenitore">
+    <h1>CONTA MESSAGGI WHATSAPP</h1>
+
+    <div class="istruzioni">
+      <h2>Come fare:</h2>
+        <ol>
+        <li>📱 Apri WhatsApp e vai sulla chat che vuoi esportare</li>
+        <li>📤 Clicca <strong>Esporta chat</strong></li>
+        <li>🗂 Seleziona <strong>“Senza media”</strong> e salva il file ZIP</li>
+        <li>🧩 Estrai lo ZIP e seleziona il file <strong>.txt</strong></li>
+        <li>⬇️ Trascinalo qui sotto per analizzarlo</li>
+        </ol>
+
+    </div>
+
+    <div id="area-caricamento">
+      <p id="testo-area">📄 Trascina qui il file .txt oppure clicca</p>
+      <input type="file" id="file-chat" accept=".txt">
+    </div>
+
+
+    <button id="pulsante-analizza">📊 Analizza</button>
+
+    <div id="risultati" class="nascosto">
+      <h2>Risultati</h2>
+      <div class="scheda"><strong>Totale messaggi:</strong> <span id="conteggio-totale"></span></div>
+      <div id="schede-utenti" class="schede"></div>
+    </div>
+  </div>
+
+  <div class="firma">
+  Creato da Dardan Bytyqi
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
