@@ -74,7 +74,7 @@ pulsanteAnalizza.addEventListener("click", () => {
  for (const nome in conteggiUtenti) {
   const riquadro = document.createElement("div");
   riquadro.className = "scheda";
-  riquadro.style.backgroundColor = "#e8f0fe"; // Azzurro fisso
+  riquadro.style.backgroundColor = "#e8f0fe"; 
   riquadro.innerHTML = `<strong>${nome}:</strong> ${conteggiUtenti[nome]}`;
   contenitoreSchede.appendChild(riquadro);
 }

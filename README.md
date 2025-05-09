@@ -18,5 +18,5 @@ Un tool semplice per contare i messaggi da una chat WhatsApp esportata.
 - JavaScript
 
 ## Provalo 🌐
-[progetto online](https://github.com/DardanBytyqi/contamessaggiwhatsapp)
+[progetto online](https://dardanbytyqi.github.io/contamessaggiwhatsapp/)
 
